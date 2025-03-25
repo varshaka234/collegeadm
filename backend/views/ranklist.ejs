@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Rank List</title>
+</head>
+<body>
+    <h2>Rank List</h2>
+
+    <table border="1">
+        <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
+        <% students.forEach(student => { %>
+            <tr>
+                <td><%= student.rank %></td>
+                <td><%= student.name %></td>
+                <td><%= student.marks %></td>
+            </tr>
+        <% }) %>
+    </table>
+
+</body>
+</html>
